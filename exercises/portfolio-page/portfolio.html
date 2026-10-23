@@ -1,0 +1,177 @@
+<!doctype html>
+<!--
+  L2 — Semantic Portfolio Page  (STARTER)
+  =========================================
+  Your goal: build a personal portfolio page using HTML5 semantic elements.
+
+  Semantic elements to use:
+    <header>   — site-wide header (name, nav)
+    <nav>      — navigation links
+    <main>     — primary page content
+    <section>  — a thematic group with a heading
+    <article>  — self-contained content (use for each project)
+    <footer>   — closing info (copyright)
+
+  No CSS needed — focus on structure and meaning.
+
+  Remember:
+    • Every <img> MUST have an alt attribute.
+      If the image is decorative, use alt=""
+      If it conveys information, describe the image in alt.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: Update the <title> with your own name -->
+    <title>Jordan Hill - Developer Portfolio</title>
+  </head>
+  <body>
+    <!-- TODO: Add a <header> containing:
+       - An <h1> with your name
+       - A short tagline in a <p>
+       - A <nav> with links to: #about, #projects, #skills, #contact
+  -->
+    <header>
+      <h1>Jordan</h1>
+      <p>AI Software Engineer | Coding Temple</p>
+
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- TODO: Add an "About Me" <section id="about"> with:
+            - An <h2> heading
+            - A short bio paragraph
+            - An <img> with a proper alt attribute
+        -->
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          My name is Jordan and I am transitioning careers into AI Software
+          engineering. I have worked many different types of labor jobs but
+          always felt I could use my brain more. I have developed impeccable
+          communication and problem solving skills throughout that time. I will
+          be using that experience to help me build AI-powered applications.
+        </p>
+        <p>
+          Currently I am a little more than halfway through the
+          <strong>Coding Temple Curriculum</strong> and really enjoy what I have
+          been learning to build and create.
+        </p>
+        <img src="profile.png" alt="Portrait of Jordan Hill" width="200" />
+      </section>
+
+      <!-- TODO: Add a "Projects" <section id="projects"> with:
+            - An <h2> heading
+            - Three <article> elements, one per completed module.
+              Each article should have: <h3> title, module label, description, <img>
+        -->
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>My Projects</h2>
+
+        <article>
+          <h3>Student Grade Tracker</h3>
+          <p><strong>Module 1 - Python Fundamentals</strong></p>
+          <p>
+            Built a Python application that manages student records, reads and
+            writes CSV files, calculates grades and averages, and generates
+            student performance summaries.
+          </p>
+          <img
+            src="student-grade-tracker.png"
+            alt="Screenshot of Student Grade Tracker Python project"
+            width="400"
+          />
+        </article>
+
+        <article>
+          <h3>Library Management System</h3>
+          <p><strong>Module 3 - SQL & Database Development</strong></p>
+          <p>
+            Developed a library management application using Python, SQLite, and
+            SQLAlchemy. The system manages books, authors, members, and
+            borrowing records through database operations.
+          </p>
+          <img
+            src="library-system.png"
+            alt="Screenshot of Library Management System project"
+            width="400"
+          />
+        </article>
+
+        <article>
+          <h3>REST API Explorer</h3>
+          <p><strong>Module 4 - REST API Development</strong></p>
+          <p>
+            Developed a Python application that interacts with public REST APIs
+            using the requests library. Implemented GET, POST, PATCH, and DELETE
+            requests, JSON parsing, authentication, and HTTP error handling.
+          </p>
+          <img
+            src="REST-API-Explorer.png"
+            alt="REST API Explorer Python project"
+            width="400"
+          />
+        </article>
+      </section>
+
+      <!-- TODO: Add a "Skills" <section id="skills"> with:
+            - An <h2> heading
+            - A <ul> listing at least 5 skills
+        -->
+
+      <!-- TODO: Add a "Contact" <section id="contact"> with:
+            - An <h2> heading
+            - Your (fake) email address as a mailto: link
+            - Links to GitHub and LinkedIn profiles
+        -->
+
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Python Programming</li>
+          <li>SQL & SQLAlchemy</li>
+          <li>FastAPI & REST API Development</li>
+          <li>Git & GitHub</li>
+          <li>HTML5</li>
+          <li>Pytest & Automated Testing</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          Email:
+          <a href="mailto:hello@example.com"> hello@example.com </a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          |
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <!-- TODO: Add a <footer> with a copyright line -->
+    <footer>
+      <p>&copy; 2026 Jordan Hill. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
